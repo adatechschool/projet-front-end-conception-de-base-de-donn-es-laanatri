@@ -1,9 +1,9 @@
-import Nav from "../molecules/nav"
-import Button from "../atoms/button"
+import Nav from "../molecules/nav";
+import Button from "../atoms/button";
 
 export default function NavBar() {
 
-    const don = {
+    const btnDon = {
         id: 1,
         name: "Faire un don 🫶",
         icon: "",
@@ -16,7 +16,7 @@ export default function NavBar() {
                 <p>🍵 Ada<span>ence</span></p>
             </div>
             <Nav/>
-            <Button link={don}/>
+            <Button link={btnDon}/>
         </div>
     )
 }
