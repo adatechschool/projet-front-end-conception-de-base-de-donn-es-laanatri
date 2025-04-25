@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
 
         {/* <div className="calque" style={{ position: "absolute", top: 0, left: 0, width: "100%", opacity: ".6", zIndex: "10" }}>
-          <img src="/images/Solidarity_project_1_home.png" style={{width: "100%"}}/>
+          <img src="/images/Solidarity_project_2_search.png" style={{width: "100%"}}/>
         </div> */}
 
         <Navbar/>
