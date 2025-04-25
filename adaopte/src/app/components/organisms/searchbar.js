@@ -1,5 +1,4 @@
 import Form from 'next/form';
-// import { FormEvent } from 'react'
 
 const activites = [
     {
@@ -24,24 +23,29 @@ const activites = [
     }
 ]
 
-export default function SearchBar() {
+export default function SearchBar(props) {
     return (
         <div className="search-bar">
             <Form action="/visite">
                 <div>
-                    <label for="select-activite">Moment à partager</label>
-                    <select name="activite" id="select-activite">
+                    <label htmlFor="select-activite">Moment à partager</label>
+                    <select name="activite" id="select-activite" defaultValue={props.activite ? props.activite : ""}>
+                        <option values="">Tous les moments possibles</option>
                         {activites.map((activite) => (
                             <option value={activite.name} key={activite.id}>{activite.name}</option>
                         ))}
                     </select>
                 </div>
                 <div>                    
-                    <label for="input-ville">Localisation</label>
-                    <input type="text" name="ville" id="input-ville" placeholder='Votre ville'/>
+                    <label htmlFor="input-city">Localisation</label>
+                    <input type="text" name="city" id="input-city" placeholder='Votre ville' defaultValue={props.city ? props.city : ""}/>
                 </div>
                 <button className="button" type="submit">Rechercher 🔎</button>
             </Form>
+            <div className="form-more">
+                <p className="number-activites">80 moments trouvés</p>
+                <p className="reset-form">Réinitialiser les filtres</p>
+            </div>
         </div>
     )
 }
