@@ -3,9 +3,7 @@ import Title from "./components/molecules/title";
 import Button from "./components/atoms/button";
 import Card from "./components/molecules/card";
 
-
 import Image from 'next/image';
-
 
 import profiles from "../../public/datas/profiles.json";
 
@@ -114,7 +112,6 @@ export default function Home() {
 
       <section className="section-difference">
         <Title text={textPersonnalite[2]}/>
-
         <div className="difference-buttons-content">
           {btnsDifference.map((btn) => (
             <Button link={btn} key={btn.id}/>
