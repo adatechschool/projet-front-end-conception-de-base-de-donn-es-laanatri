@@ -9,15 +9,27 @@ import profiles from "../../../public/datas/profiles.json";
 
 export default function Visite() {
   const searchParams = useSearchParams();
-  const activite = searchParams.get('activite');
-  const city = searchParams.get('city').toLowerCase();
-
-  const selectedProfiles = profiles.filter((profile) => profile["city"].toLowerCase() === city && profile["type"] === activite)
+  const activite = searchParams ? searchParams.get('activite') : "Tous les moments possibles";
+  const city = searchParams ? searchParams.get('city') ? searchParams.get('city').toLowerCase() : "" : "";
+  
+  const selectedProfiles = profiles.filter((profile) => {
+    if (city === "" && profile["type"] === activite) {
+      return true
+    } else if (activite === "Tous les moments possibles" && profile["city"].toLowerCase().includes(city)) {
+      return true
+    }  else if (profile["type"] === activite && profile["city"].toLowerCase().includes(city)) {
+      return true
+    } else {
+      return false
+    }
+  })
+  
+  let numberSelected = selectedProfiles.length;
 
   return (
     <>
       <section className="section-search">
-        <SearchBar activite={activite} city={city}/>
+        <SearchBar activite={activite} city={city} num={numberSelected}/>
       </section>
 
       <section className="section-results">
