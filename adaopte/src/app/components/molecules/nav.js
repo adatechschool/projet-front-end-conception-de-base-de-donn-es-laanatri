@@ -11,13 +11,13 @@ const links = [
         id: 2,
         name: "Je rends visite",
         icon: "images/accessibility.svg",
-        route: "visite?activite=Tous+les+moments+possibles&city="
+        route: "/visite?activite=Tous+les+moments+possibles&city="
     },
     {
         id: 3,
         name: "Guide du partage",
         icon: "images/book-open.svg",
-        route: "/"
+        route: "/guide"
     },
     {
         id: 4,
