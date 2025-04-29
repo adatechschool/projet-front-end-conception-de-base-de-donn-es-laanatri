@@ -14,7 +14,7 @@ export default function ProfileCard({props}) {
     return (
         <div className="profile-cards">
             <div className="img-content">
-                <Image src={props.imageUrl} width={200} height={50} alt={"photo de " + props.firstname}/>
+                <Image src={props.imageUrl} width={400} height={400} alt={"photo de " + props.firstname}/>
             </div>
             <div className="txt-content">
                 <div className="txt-profile">
