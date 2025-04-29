@@ -25,7 +25,7 @@ const btnProfiles = {
   id: 1,
   name: "Voir tous les profils",
   icon: "",
-  route: "/"
+  route: "/visite?city=&activite=Tous les moments possibles"
 };
 
 const marcheCards = [
@@ -59,7 +59,7 @@ const btnsDifference = [
     id: 1,
     name: "Programmer une visite",
     icon: "",
-    route: "/"
+    route: "/visite?city=&activite=Tous les moments possibles"
   },
   {
     id: 2,
@@ -71,7 +71,7 @@ const btnsDifference = [
     id: 3,
     name: "Devenir bénévole",
     icon: "",
-    route: "/"
+    route: "/benevole"
   }
 ];
 
@@ -99,6 +99,10 @@ export default function Home() {
             if (index < 8) {
               return <div key={index}>
                 <Image src={profile.imageUrl} width="600" height="600" alt="photo de profile"/>
+                <div className="profile-plus">
+                  <p>{profile.firstname}</p>
+                  <p>{profile.city}</p>
+                </div>
               </div>
             }
           })}
