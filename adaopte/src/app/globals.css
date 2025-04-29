@@ -109,6 +109,7 @@ nav > ul {
 
 .nav-link.disabled {
     color: var(--accent-color);
+    pointer-events: none;
     &:before {
         transform: scaleX(1);
     }
