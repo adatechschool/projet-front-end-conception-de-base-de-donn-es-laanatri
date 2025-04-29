@@ -11,7 +11,7 @@ const links = [
         id: 2,
         name: "Je rends visite",
         icon: "images/accessibility.svg",
-        route: "/visite"
+        route: "visite?activite=Tous+les+moments+possibles&city="
     },
     {
         id: 3,
