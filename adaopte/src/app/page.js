@@ -75,6 +75,9 @@ const btnsDifference = [
   }
 ];
 
+// const cities = profiles.map((profile) => profile.city);
+// console.log(cities)
+
 export default function Home() {
   return (
     <>
@@ -92,11 +95,13 @@ export default function Home() {
       <section className="section-mosaique">
         <Title text={textPersonnalite[0]}/>
         <div className="mosaique">
-          {profiles.map((profile, index) => (
-            <div key={index}>
-              <Image src={profile.imageUrl} width="600" height="600" alt="photo de profile"/>
-            </div>
-          ))}
+          {profiles.map((profile, index) => {
+            if (index < 8) {
+              return <div key={index}>
+                <Image src={profile.imageUrl} width="600" height="600" alt="photo de profile"/>
+              </div>
+            }
+          })}
         </div>
         <Button link={btnProfiles}/>
       </section>
