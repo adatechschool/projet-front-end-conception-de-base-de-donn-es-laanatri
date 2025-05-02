@@ -87,7 +87,7 @@ export default function Home() {
         </div>
         <div className="txt-content">
           <h1>Rétablissons les liens</h1>
-          <p>Et si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? Prenez <br/> rendez-vous pour partager un moment avec une personne âgée isolée.</p>
+          <p>Et si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? <br/>Prenez rendez-vous pour partager un moment avec une personne âgée isolée.</p>
         </div>
         <SearchBar/>
       </header>

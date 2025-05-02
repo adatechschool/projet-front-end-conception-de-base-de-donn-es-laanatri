@@ -83,7 +83,7 @@ export default function Visite() {
             <section className="section-pagination">
                 <div className="pagination-cards">
                     <div className={currentPage === 0 ? "btn-pagination btn-prev inactif" : "btn-pagination btn-prev"} onClick={(e) => {setCurrentPage(currentPage - 1)}}>
-                        <p >&laquo; Précédent</p>
+                        <p >&laquo; <span>Précédent</span></p>
                     </div>
                     {displayPagnation().map((p, i) => (
                         <div className={p - 1 === currentPage ? "active btn-page-numero" : "btn-page-numero"} key={i} data-page={p - 1} onClick={handlePages}>
@@ -91,7 +91,7 @@ export default function Visite() {
                         </div>
                     ))}
                     <div className={currentPage === displayPagnation().length - 1 ? "btn-pagination btn-next inactif" : "btn-pagination btn-next"} onClick={(e) => {setCurrentPage(currentPage + 1)}}>
-                        <p>Suivant &raquo;</p>
+                        <p><span>Suivant</span> &raquo;</p>
                     </div>
                 </div>
             </section>
