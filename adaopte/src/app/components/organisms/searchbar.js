@@ -46,27 +46,29 @@ export default function SearchBar(props) {
     }
 
     return (
-        <div className="search-bar">
-            <form action="/visite" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="select-activite">Moment à partager</label>
-                    <select name="activite" id="select-activite" onChange={(e) => setActivite(e.target.value)} value={activite}>
-                        <option value="">Tous les moments possibles</option>
-                        {activites.map((activite) => (
-                            <option value={activite.name} key={activite.id}>{activite.name}</option>
-                        ))}
-                    </select>
+        <>
+            <div className="search-bar">
+                <form action="/visite" onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor="select-activite">Moment à partager</label>
+                        <select name="activite" id="select-activite" onChange={(e) => setActivite(e.target.value)} value={activite}>
+                            <option value="Tous les moments possibles">Tous les moments possibles</option>
+                            {activites.map((activite) => (
+                                <option value={activite.name} key={activite.id}>{activite.name}</option>
+                            ))}
+                        </select>
+                    </div>
+                    <div>                    
+                        <label htmlFor="input-city">Localisation</label>
+                        <input type="text" name="city" id="input-city" placeholder='Votre ville' onChange={(e) => setCity(e.target.value)} value={city}/>
+                    </div>
+                    <button className="button" type="submit">Rechercher 🔎</button>
+                </form>
+                <div className="form-more">
+                    <p className="number-activites">{props.num} {props.num > 1 ? "moments trouvés" : "moment trouvé"}</p>
+                    <p className="reset-form" onClick={handleReset}>Réinitialiser les filtres</p>
                 </div>
-                <div>                    
-                    <label htmlFor="input-city">Localisation</label>
-                    <input type="text" name="city" id="input-city" placeholder='Votre ville' onChange={(e) => setCity(e.target.value)} value={city}/>
-                </div>
-                <button className="button" type="submit">Rechercher 🔎</button>
-            </form>
-            <div className="form-more">
-                <p className="number-activites">{props.num} {props.num > 1 ? "moments trouvés" : "moment trouvé"}</p>
-                <p className="reset-form" onClick={handleReset}>Réinitialiser les filtres</p>
             </div>
-        </div>
+        </>
     )
 }
