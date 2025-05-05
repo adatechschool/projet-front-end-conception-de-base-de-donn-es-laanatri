@@ -9,26 +9,14 @@ import profiles from "../../../public/datas/profiles.json";
 
 export default function Visite() {
     const searchParams = useSearchParams();
-    const activite = searchParams ? searchParams.get("activite") : "Tous les moments possibles";
-    const city = searchParams ? searchParams.get("city") ? searchParams.get("city").toLowerCase() : "" : "";
+    const activite = searchParams?.get("activite") ?? "Tous les moments possibles";
+    const city = searchParams?.get("city")?.toLowerCase() ?? "";
 
     // Récupére les profils
     const selectedProfiles = profiles.filter((profile) => {
-        if (city === "" && profile["type"] === activite) {
-            return true;
-        } else if (
-            activite === "Tous les moments possibles" &&
-            profile["city"].toLowerCase().includes(city)
-        ) {
-            return true;
-        } else if (
-            profile["type"] === activite &&
-            profile["city"].toLowerCase().includes(city)
-        ) {
-            return true;
-        } else {
-            return false;
-        }
+        return (city === "" && profile["type"] === activite) ||
+            (activite === "Tous les moments possibles" && profile["city"].toLowerCase().includes(city)) ||
+            (profile["type"] === activite && profile["city"].toLowerCase().includes(city));
     });
 
     // Pagination
