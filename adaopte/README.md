@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PROJET QUIZ - THE FANTASTIQUIZZZ
 
-## Getting Started
+## Description du projet : 
 
-First, run the development server:
+Ce projet est un quiz permettant de tester ses connaissances sur 4 thèmes différents. Ici nous avons les thèmes : "Le Seigneur des Anneaux", "Harry Potter", "Pokemon" et "La Mythologie Grecque". 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A chaque partie, il est possible de choisir un ou plusieurs thèmes et 10 questions sont posées aléatoirement en fonction des thèmes choisis. 
+Pour chaque question, 4 propositions sont mises en avant et il n'y a qu'une seule bonne réponse. Pour répondre, le temps est compté. Si aucune réponse n'est validée à la fin du temps imparti, la question est considérée comme fausse.
+Après avoir validé la réponse (ou à la fin du temps imparti), une modale apparaît, indiquant quelle était la bonne réponse et donnant plus d'informations concernant celle-ci.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Il est aussi possible de se challenger entre amis car un tableau des scores enregistre chaque score, associé au nom du joueurs et au(x) thème(s) sélectionné(s). Il est accessible depuis la page d'accueil, en cliquant sur l'icône de podium en bas à gauche.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Fonctionnalités : 
 
-## Learn More
+- Possibilité de choisir plusieurs thème sur une même partie
+- Calcul du score
+- Enregistrement du score via le local storage
+- Affichage du score
+- Interface responsive
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies utilisées : 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- JavaScript
+- React.js / Next.js
+- Mobile-first
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Auteur : 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Adélaïde LAANATRI (https://github.com/laanatri)
