@@ -1,30 +1,28 @@
-# PROJET QUIZ - THE FANTASTIQUIZZZ
+# PROJET ADAENCE
 
 ## Description du projet : 
 
-Ce projet est un quiz permettant de tester ses connaissances sur 4 thèmes différents. Ici nous avons les thèmes : "Le Seigneur des Anneaux", "Harry Potter", "Pokemon" et "La Mythologie Grecque". 
-
-A chaque partie, il est possible de choisir un ou plusieurs thèmes et 10 questions sont posées aléatoirement en fonction des thèmes choisis. 
-Pour chaque question, 4 propositions sont mises en avant et il n'y a qu'une seule bonne réponse. Pour répondre, le temps est compté. Si aucune réponse n'est validée à la fin du temps imparti, la question est considérée comme fausse.
-Après avoir validé la réponse (ou à la fin du temps imparti), une modale apparaît, indiquant quelle était la bonne réponse et donnant plus d'informations concernant celle-ci.
-
-Il est aussi possible de se challenger entre amis car un tableau des scores enregistre chaque score, associé au nom du joueurs et au(x) thème(s) sélectionné(s). Il est accessible depuis la page d'accueil, en cliquant sur l'icône de podium en bas à gauche.
+Adaence est une plateforme pour lutter contre l’isolement des aînés, en facilitant les rencontres bienveillantes entre générations. Les plus jeunes peuvent devenir bénévoles et passer un moment dédié avec un aîné.
 
 
 ## Fonctionnalités : 
 
-- Possibilité de choisir plusieurs thème sur une même partie
-- Calcul du score
-- Enregistrement du score via le local storage
-- Affichage du score
-- Interface responsive
+- Recherche d'un aîné en fonction de son choix d'activité et de sa localisation
+- Visualisation des résultats de la recherche pour pouvoir faire son choix
+- Mise en place d'une pagination pour une lecture simplifiée et rapide
 
 
 ## Technologies utilisées : 
 
 - JavaScript
-- React.js / Next.js
-- Mobile-first
+- React / Next.js
+- CSS / Mobile-first
+
+
+## Points bloquants et résolutions :
+
+- Première prise en main de React et de Next.js
+=> familiarisation avec la documentation, cours sur react.
 
 
 ## Auteur : 
