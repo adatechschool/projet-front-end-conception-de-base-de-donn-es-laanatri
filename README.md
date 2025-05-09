@@ -21,7 +21,7 @@ Adaence est une plateforme pour lutter contre l’isolement des aînés, en faci
 
 ## Points bloquants et résolutions :
 
-- Première prise en main de React et de Next.js
+- Première prise en main de React et de Next.js \
 => familiarisation avec la documentation, cours sur react.
 
 
