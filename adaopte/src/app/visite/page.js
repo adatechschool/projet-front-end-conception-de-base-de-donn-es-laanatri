@@ -68,7 +68,9 @@ export default function Visite() {
                 </Suspense>
             </section>
 
-            <Results ref={resultsRef} npPage={numberPerPage} cPage={currentPage} sProfiles={selectedProfiles}/>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Results ref={resultsRef} npPage={numberPerPage} cPage={currentPage} sProfiles={selectedProfiles}/>
+            </Suspense>
 
             <section className="section-pagination">
                 <div className="pagination-cards">
