@@ -1,30 +1,34 @@
 # PROJET ADAENCE
 
-## Description du projet : 
+## 📖 Description du projet
 
-Adaence est une plateforme pour lutter contre l’isolement des aînés, en facilitant les rencontres bienveillantes entre générations. Les plus jeunes peuvent devenir bénévoles et passer un moment dédié avec un aîné.
+Adaence est une plateforme conçue pour lutter contre l'isolement des aînés, en facilitant les rencontres bienveillantes entre générations. Les plus jeunes peuvent devenir bénévoles et passer des moments dédiés avec des aînés, créant ainsi des liens humains précieux.
 
+---
 
-## Fonctionnalités : 
+## ✨ Fonctionnalités
 
-- Recherche d'un aîné en fonction de son choix d'activité et de sa localisation
-- Visualisation des résultats de la recherche pour pouvoir faire son choix
-- Mise en place d'une pagination pour une lecture simplifiée et rapide
+* 🔍 Recherche d'un aîné en fonction de son choix d'activité et de sa localisation
+* 👁️ Visualisation des résultats pour faciliter le choix
+* 📄 Pagination pour une lecture simplifiée et rapide
 
+---
 
-## Technologies utilisées : 
+## 🛠️ Technologies utilisées
 
-- JavaScript
-- React / Next.js
-- CSS / Mobile-first
+* **Langage :** JavaScript
+* **Frameworks :** React, Next.js
+* **Design :** CSS (approche mobile-first)
 
+---
 
-## Points bloquants et résolutions :
+## 🚧 Points bloquants et résolutions
 
-- Première prise en main de React et de Next.js \
-=> familiarisation avec la documentation, cours sur react.
+* Première prise en main de **React** et **Next.js**
+* 💡 Solution : Familiarisation avec la documentation officielle et suivi de cours sur React
 
+---
 
-## Auteur : 
+## ✍️ Auteur
 
-Adélaïde LAANATRI (https://github.com/laanatri)
+Adélaïde Laanatri - [Mon GitHub](https://github.com/laanatri)
