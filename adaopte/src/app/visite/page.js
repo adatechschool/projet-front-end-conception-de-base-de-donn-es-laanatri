@@ -2,7 +2,7 @@
 
 import SearchBar from "../components/organisms/searchbar";
 import { useSearchParams } from "next/navigation";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, Suspense } from "react";
 
 import Results from "../components/organisms/results";
 import profiles from "../../../public/datas/profiles.json";
