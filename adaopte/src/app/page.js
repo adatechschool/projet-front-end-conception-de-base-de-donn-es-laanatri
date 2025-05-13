@@ -6,6 +6,7 @@ import Card from "./components/molecules/card";
 import Image from 'next/image';
 
 import profiles from "../../public/datas/profiles.json";
+import { Suspense } from "react";
 
 const textPersonnalite = [
   {
@@ -89,7 +90,9 @@ export default function Home() {
           <h1>Rétablissons les liens</h1>
           <p>Et si vous offriez un peu de votre temps à ceux qui en ont le plus besoin ? <br/>Prenez rendez-vous pour partager un moment avec une personne âgée isolée.</p>
         </div>
-        <SearchBar/>
+        <Suspense>
+          <SearchBar/>
+        </Suspense>
       </header>
 
       <section className="section-mosaique">

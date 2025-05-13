@@ -63,7 +63,9 @@ export default function Visite() {
     return (
         <>
             <section className="section-search">
-                <SearchBar activite={activite} city={city} num={numberSelected}/>
+                <Suspense>
+                    <SearchBar activite={activite} city={city} num={numberSelected}/>
+                </Suspense>
             </section>
 
             <Results ref={resultsRef} npPage={numberPerPage} cPage={currentPage} sProfiles={selectedProfiles}/>
