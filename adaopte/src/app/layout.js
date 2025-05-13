@@ -1,6 +1,7 @@
 import Navbar from "./components/organisms/navbar";
 import Footer from "./components/organisms/footer";
 import "./globals.css";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Adaence",
@@ -19,7 +20,9 @@ export default function RootLayout({ children }) {
         <Navbar/>
 
           <main>
-            {children}
+            <Suspense>
+              {children}
+            </Suspense>
           </main>
 
         <Footer/>
